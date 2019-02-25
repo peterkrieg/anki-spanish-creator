@@ -1,6 +1,6 @@
 // reads from "word-sentences" rmq and creates anki card for each pair of words
 
-const request = require('request').defaults({ json: true });
+const request = require('request');
 
 const queueName = 'word-sentences';
 const ConsumerClass = require('./class/Consumer');
@@ -9,7 +9,6 @@ const consumer = new ConsumerClass(queueName);
 
 const { promisify } = require('util');
 
-const requestPromise = promisify(request);
 
 const numPrefetch = 1;
 let channel;
@@ -28,6 +27,9 @@ const spanishDictConfig = {
 	lang: 'es',
 };
 
+const requestPromise = promisify(request).defaults({
+	json: true,
+});
 
 (async () => {
 	channel = await consumer.initChannel(numPrefetch);
@@ -41,10 +43,11 @@ async function handleMessage (message) {
 		const messageBody = JSON.parse(message.content.toString()).message;
 
 		const ankiBody = createAnkiBody(messageBody);
+		console.log(ankiBody);
 
 		const requestOptions = { json: true, uri: ankiConnectConfig.url, body: ankiBody };
 		const resp = await requestPromise(requestOptions);
-		console.log('created card for', messageBody.spanishWord);
+		console.log('created card for', messageBody.spanish);
 		channel.ack(message);
 	}
 	catch (err) {
@@ -54,11 +57,12 @@ async function handleMessage (message) {
 
 
 function createAnkiBody (message) {
-	const { englishWord, spanishWord, sentences } = message;
-	const spanishDictAudioUrl = `${spanishDictConfig.urlPrefix}?lang=${spanishDictConfig.lang}&text=${encodeURI(spanishWord)}&key=${spanishDictConfig.key}`;
+	const { english, spanish, spanishPronunciationWord, sentences } = message;
+	const { key, lang } = spanishDictConfig;
+	const spanishDictAudioUrl = `${spanishDictConfig.urlPrefix}?lang=${lang}&text=${encodeURI(spanishPronunciationWord)}&key=${key}`;
 
 	// replaces words of spanish word with underscore ("el nino" => "el_nino")
-	const audioFileName = `${spanishWord.replace(/\ /g, '_')}.mp3`;
+	const audioFileName = `${spanishPronunciationWord.replace(/\ /g, '_')}.mp3`;
 
 	function createSentenceFields (sents) {
 		const fields = {};
@@ -81,14 +85,14 @@ function createAnkiBody (message) {
 				deckName: ankiConnectConfig.deckName,
 				modelName: ankiConnectConfig.modelName,
 				fields: {
-					Front: spanishWord,
-					Back: englishWord,
+					Front: spanish,
+					Back: english,
 					...sentenceFields,
 				},
 				options: {
 					allowDuplicate: false,
 				},
-				tags: [],
+				tags: ['body-nouns'],
 				audio: {
 					url: spanishDictAudioUrl,
 					filename: audioFileName,

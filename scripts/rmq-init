@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+
+const requestOriginal = require('request');
+const { promisify } = require('util');
+
+const apiPrefix = 'http://localhost:8080/api';
+
+// need to encode for default vhost of "/" => "%2F" so it's url-safe
+const vhostName = encodeURIComponent('/');
+
+// TODO: move all queue names to config
+const wordPairQueueName = 'word-pairs';
+const sentenceQueueName = 'word-sentences';
+
+const request = promisify(requestOriginal).defaults({
+	baseUrl: apiPrefix,
+	json: true,
+	auth: {
+		user: 'guest',
+		password: 'guest',
+	},
+});
+
+const queueCreationOptions = {
+	auto_delete: false,
+	durable: true,
+};
+
+(async () => {
+	try {
+		await request.put(`/queues/${vhostName}/${wordPairQueueName}`, { body: queueCreationOptions });
+		await request.put(`/queues/${vhostName}/${sentenceQueueName}`, { body: queueCreationOptions });
+
+		console.log('created queues!');
+	}
+	catch (err) {
+		throw new Error(err);
+	}
+})();

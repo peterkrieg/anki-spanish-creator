@@ -1,0 +1,61 @@
+// TODO: change parser to treat >> as override for spanish pronunciation
+
+
+arm, brazo
+ankle, tobillo
+back, espalda
+beard, barba
+breast, seno
+butt, trasero
+buttocks, las nalgas
+calf, pantorrilla
+cheek, mejilla / cachete
+chest, pecho
+chin, el mentón
+ear, oreja (external part) / el oído (internal part) >> oreja
+elbow, codo
+eye, ojo
+eyebrow, ceja
+eyelashes, las pestañas
+face, cara
+finger, dedo
+foot, el pie
+forehead, la frente
+hair, pelo (on head) / vello (on human body) >> pelo
+hand, la mano
+head, cabeza
+heel, el talón
+hip, cadera
+human body, <cuerpo humano>
+knee, rodilla
+leg, pierna
+lips, labios
+mustache, el bigote / mostacho >> mostacho
+mouth, boca
+belly button, ombligo
+neck, cuello
+shoulder, hombro
+skin, la piel
+thigh, muslo
+throat, garganta
+thumb, el pulgar
+toe, <dedo del pie>
+tongue, lengua
+tooth/teeth, el diente / los dientes >> dientes
+waist, cintura
+wrist, muñeca
+belly, barriga
+
+// internal organs
+brain, cerebro
+lung/lungs, el pulmón/los pulmones >> pulmón
+heart, el corazón
+liver, el hígado
+muscle, el músculo
+
+// skeleton
+bone, hueso
+jawbone, la mandíbula
+ribs, las costillas
+skeleton, el esqueleto
+skull, cráneo

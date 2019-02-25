@@ -80,7 +80,7 @@ async function workerProcess (initMessage) {
 		console.log('handle message');
 		const pair = JSON.parse(message.content.toString()).message;
 
-		const wordForUrl = pair.spanishWord.split(' ').reduce((a, b, c, arr) => arr[arr.length - 1]);
+		const wordForUrl = pair.spanishPronunciationWord;
 		const url = `https://www.spanishdict.com/examples/${encodeURI(wordForUrl)}`;
 
 		const sentences = await browser.fetchSentences(url);
