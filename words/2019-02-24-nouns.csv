@@ -1,0 +1,181 @@
+// put words in english word, spanish word, format.  spacing doesn't matter since it will trim every word
+// lines starting with // will be ignored (comments) as well as empty lines
+
+
+// General food
+appetizer, aperitivo
+mustard, la mostaza
+
+
+// fruits
+apricot, el albaricoque
+avocado, el aguacate
+blueberry, arándano
+cantaloupe, cantalupo
+cherries, las cerezas
+grape, uva
+kiwi, el kiwi
+lime, lima
+papaya, papaya
+peach, el melocotón
+pear, pera
+plum, ciruela
+prune, la ciruela pasa
+raspberry, frambuesa
+watermelon, sandía
+
+
+// veggies
+asparagus, espárrago
+blackberries, las moras
+broccoli, el brécol
+cabbage, repollo
+carrot, la zanahoria
+cauliflower, la coliflor
+celery, apio
+coconut, coco
+cucumber, el pepino
+eggplant, berenjena
+kale, la col rizada
+lettuce, lechuga
+pepper, el pimiento
+onion, cebolla
+pumpkin, calabaza
+spinach, espinaca
+tomato, el tomate
+
+// MEAT/ seafood
+bacon, tocino
+beef, la carne de vaca
+crab, cangrejo
+cod, el bacalao
+duck, el pato
+lobster, langosta
+oyster, la ostra
+pork, cerdo
+salmon, el salmón
+shellfish, el marisco
+shrimp, el camarón
+squid, el calamar
+steak, el bistec
+trout, trucha
+tuna, el atún
+veal, la ternera
+
+// beverages, drinks
+lemonade, limonada
+alcohol, el alcohol
+water, el agua
+
+
+
+// animals
+
+alligator, el caimán
+ant, hormiga
+bat (animal), murciélago
+bear, oso
+beaver, el castor
+bedbug, el chinche
+bee, abeja,
+beetle, escarabajo
+butterfly, mariposa
+camel, el camello
+cheetah, guepardo
+cockroach, cucaracha
+cow, vaca
+cricket (animal), grillo
+crocodile, cocodrilo
+deer, venado
+eagle, águila
+eel, anguila
+fish (animal), el pez
+fish (culinary), el pescado
+flamingo, flamenco
+fly (insect), mosca
+fox, zorro
+frog, rana
+giraffe, la jirafa
+goat, cabra,
+goose, ganso
+gorilla, gorila
+hawk, el halcón
+kangaroo, canguro
+lion, el león
+lizard, lagarto
+moose, el alce
+mosquito, el mosquito
+mouse, el ratón
+octopus, pulpo
+otter, nutria
+owl, el búho
+ox, el buey
+panda, la panda
+pig, el cerdo
+pigeon, paloma
+porcupine, el puercoespín
+rabbit, conejo
+rat, rata
+seagull, la gaviota
+shark, el tiburón
+sheep, oveja
+spider, araña
+squirrel, ardilla
+swan, el cisne
+termite, la termita
+tiger, el tigre
+toad, sapo
+wasp, la avispa
+wolf, lobo
+zebra, cebra
+
+whale, ballena
+dolphin, el delfín
+seal (animal), foca
+walrus, morsa
+
+
+// TODO
+// potato
+// pea
+// snack
+// soda
+// snake
+
+
+
+
+
+// colors
+pink, rosado
+purple, morado
+grey, gris
+gold, dorado
+silver, plateado
+
+
+// house and home
+blender, licuadora
+bowl, taza
+coffee maker, cafetera
+dish, plato
+dishwasher, lavaplatos
+fork, tenedor
+microwave oven, el microondas
+napkin, servilleta
+oven, horno
+sink (in bathroom), lavabo
+sink (in kitchen), fregadero
+stove, cocina
+toaster, tostadora
+wine glass, copa
+bedspread, colcha
+closet, armario
+pillow, almohada
+bedsheets, las sábanas
+vase, florero
+
+
+
+// body
+nose, la nariz

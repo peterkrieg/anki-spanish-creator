@@ -1,0 +1,21 @@
+{
+  "name": "anki-spanish-creator",
+  "version": "1.0.0",
+  "description": "This is used to bulk-create spanish words into a deck.  Used to save time because doing so from the UI takes way longer.",
+  "main": "create.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "cheerio": "^1.0.0-rc.2",
+    "lodash": "^4.17.11",
+    "puppeteer": "^1.11.0",
+    "query-string": "^6.2.0",
+    "request": "^2.88.0",
+    "uuid": "^3.3.2"
+  }
+}
