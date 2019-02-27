@@ -92,7 +92,7 @@ function createAnkiBody (message) {
 				options: {
 					allowDuplicate: false,
 				},
-				tags: ['body-nouns'],
+				tags: [],
 				audio: {
 					url: spanishDictAudioUrl,
 					filename: audioFileName,
