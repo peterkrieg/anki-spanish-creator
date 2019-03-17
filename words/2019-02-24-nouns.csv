@@ -1,7 +1,3 @@
-// put words in english word, spanish word, format.  spacing doesn't matter since it will trim every word
-// lines starting with // will be ignored (comments) as well as empty lines
-
-
 // General food
 appetizer, aperitivo
 mustard, la mostaza
@@ -53,7 +49,7 @@ duck, el pato
 oyster, la ostra
 pork, cerdo
 salmon, el salmón
-shellfish, el marisco
+seafood / shellfish, marisco
 shrimp, el camarón
 squid, el calamar
 steak, el bistec
@@ -110,7 +106,6 @@ otter, nutria
 owl, el búho
 ox, el buey
 panda, la panda
-pig, el cerdo
 pigeon, paloma
 porcupine, el puercoespín
 rabbit, conejo
@@ -149,23 +144,23 @@ walrus, morsa
 pink, rosado
 purple, morado
 grey, gris
-gold, dorado
-silver, plateado
+golden, dorado
+silver-colored, plateado
 
 
 // house and home
 blender, licuadora
-bowl, taza
+cup/mug, taza
 coffee maker, cafetera
 dish, plato
-dishwasher, lavaplatos
+dishwasher, el lavaplatos
 fork, tenedor
 microwave oven, el microondas
 napkin, servilleta
 oven, horno
 sink (in bathroom), lavabo / el lavamanos >> lavabo
 sink (in kitchen), fregadero / pila >> fregadero
-stove, cocina
+stove/kitchen, cocina
 toaster, tostadora
 wine glass, copa
 bedspread, colcha

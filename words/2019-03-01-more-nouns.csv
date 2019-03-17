@@ -11,7 +11,7 @@ glove, el guante
 
 
 // plants
-bush, arbusto
+bush / shrub, arbusto
 vine, la vid / enredadera >> vid
 flower, la flor
 leaf, hoja
@@ -81,7 +81,7 @@ weather, tiempo
 climate, el clima
 downpour, aguacero / el chaparrón / chubasco (with lots of wind) >> aguacero
 sleet, la aguanieve
-umbrella, el paraguas (for rain), sombrilla (for sun, like beach umbrella) >> paraguas
+umbrella (for rain), el paraguas
 
 
 // change lizard to have lagartija as well as lagarto
