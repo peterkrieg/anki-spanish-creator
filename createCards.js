@@ -15,7 +15,7 @@ let channel;
 
 // constants which will be put into config / env variables or something later
 const ankiConnectConfig = {
-	deckName: 'Spanish Nouns',
+	deckName: 'Spanish Words #1',
 	modelName: 'Basic (and reversed card) - spanish',
 	url: 'http://localhost:8765',
 };
