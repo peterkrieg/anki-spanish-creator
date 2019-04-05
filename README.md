@@ -1,6 +1,9 @@
 # Anki-Spanish-Creator
 
-This is used to bulk-create spanish words into a deck.  Used to save time because doing so from the UI takes way longer.  Also has features like auto-fetching pronunciation mp3 of spanish word, and sample sentences, from spanishdict.
+I created this script to save time while uploading spanish vocab into [anki](https://apps.ankiweb.net/), a spaced-repetition learning software tool.  This will bulk-create spanish works into a learning deck, meant to save a ton of time (the UI would take much longer).  Features included:
+  - automatically creates anki double-sided cards using anki connect
+  - auto-fetches pronunciation mp3 of spanish word from spanishdict.com
+  - Web crawls and fetches sample sentences using chrome headless browser
 
 
 ### Instructions
