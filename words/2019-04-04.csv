@@ -46,8 +46,8 @@ to answer / respond, responder
 
 // more food and drink
 ham, el jamón
-hamburger, hamburguesa
-hot dog, perrito caliente
+hamburger, hamburguesa (ahm-boor-geh-sah)
+hot dog, <perrito caliente>
 chop (of food like pork chop), chuleta
 meatballs, las albóndigas
 salami, el salami
@@ -59,7 +59,8 @@ clam, almeja
 mussel, el mejillón
 scallop, vieira
 swordfish, el <pez espada>
-beans, frijoles (latin america) / judías (spain)
+artichoke, alcachofa
+beans, frijoles (latin america) / judías (spain) >> frijoles
 garlic, ajo
 lentil, lenteja
 mushroom, el champiñón
@@ -77,7 +78,7 @@ nut / walnut, la nuez
 peanut, el maní (latin america) / el cacahuete (spain) >> maní
 
 // fruits
-banana, el plátano / la banana > plátano
+banana, el plátano / la banana >> plátano
 berry, baya
 date (fruit), el dátil
 fig, higo

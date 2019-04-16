@@ -1,9 +1,11 @@
 # Anki-Spanish-Creator
 
-I created this script to save time while uploading spanish vocab into [anki](https://apps.ankiweb.net/), a spaced-repetition learning software tool.  This will bulk-create spanish works into a learning deck, meant to save a ton of time (the UI would take much longer).  Features included:
+I created this project to save time while uploading spanish vocab into [anki](https://apps.ankiweb.net/), a spaced-repetition learning software tool.  This will bulk-create spanish works into a learning deck, meant to save a ton of time (the UI would take much longer).  Features include:
   - automatically creates anki double-sided cards using anki connect
   - auto-fetches pronunciation mp3 of spanish word from spanishdict.com
-  - Web crawls and fetches sample sentences using chrome headless browser
+  - Web crawls and fetches sample sentences using chrome headless browser, from spanishdict.com
+
+Sample url for pronunciation is something like:  `https://audio1.spanishdict.com/audio?lang=es&text=hablar&key=494e1f0d93abd4cffaa8d5781d05dd9c`
 
 
 ### Instructions
