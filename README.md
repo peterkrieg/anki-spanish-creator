@@ -7,10 +7,12 @@ I created this project to save time while uploading spanish vocab into [anki](ht
 
 Sample url for pronunciation is something like:  `https://audio1.spanishdict.com/audio?lang=es&text=hablar&key=494e1f0d93abd4cffaa8d5781d05dd9c`
 
+Updates 8/7/19 - can now add a JSON or CSV file, code will handle either case.  CSV is kind of unnecessary complications, and then it wasn't possible to parse out comma from part of translation.
+
 
 ### Instructions
 
-1. Put words you'd like to learn into a csv under `words` directory.  See csv-parser section below for more info.
+1. Put words you'd like to learn into a csv or json file under `words` directory.  See csv-parser section below for more info.
 2. Make sure anki is running locally, with anki connect plugin installed (https://ankiweb.net/shared/info/2055492159)
 3. `docker-compose up -d` which will spin up a local RMQ, and expose management port to port `8080`.  Open `localhost:8080` in browser to see management UI, with default creds of `guest` for both `username` and `password`.
 4. `scripts/rmq-init` which will ping rmq management API to create 2 queues needed.
@@ -37,3 +39,8 @@ TODO
 
 - add more error handling
 - put constants into config
+
+Words to add:
+
+- mascota (pet)
+-

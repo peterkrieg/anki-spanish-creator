@@ -13,53 +13,72 @@ const Publisher = new publisherClass();
 const wordPairQueueName = 'word-pairs';
 
 const filePath = process.argv[2];
+const fileExtension = filePath.split('.')[1];
 
-if (!filePath) throw new Error('must specify file path to find csv of words');
+const allowedFileExtensions = ['csv', 'json'];
+
+if (!filePath) throw new Error('must specify file path to find csv or json of words');
+if (!allowedFileExtensions.includes(fileExtension)) throw new Error('file must be either csv or json')
 
 async function fetchWords () {
 	try {
 		const file = await readFile(filePath, { encoding: 'utf8' });
-		const lines = file.split('\n').filter(filterCsvLine);
 
-		// sometimes translations can have multiple spanish words as meanings
-		// but there can only be one for prounciation
-		// syntax of csv allows for >> to denote this
-		// for example, mustache, el bigote / mostacho >> mostacho
-		const words = lines.map(line => {
-			let spanishPronunciationWord;
-			let lineSplit = line.split(',').map(str => str.trim());
+		const pairs = fileExtension === 'csv' ? parseCsv(file) : parseJson(file);
+		return pairs;
 
-			if (line.includes('>>')) {
-				spanishPronunciationWord = line.split('>>')[1].trim();
-				lineSplit[1] = lineSplit[1].split('>>')[0].trim();
+		// returns words from csv
+		function parseCsv(rawFileString) {
+			const lines = file.split('\n').filter(filterCsvLine);
+
+			// sometimes translations can have multiple spanish words as meanings
+			// but there can only be one for prounciation
+			// syntax of csv allows for >> to denote this
+			// for example, mustache, el bigote / mostacho >> mostacho
+			const words = lines.map(line => {
+				let spanishPronunciationWord;
+				let lineSplit = line.split(',').map(str => str.trim());
+
+				if (line.includes('>>')) {
+					spanishPronunciationWord = line.split('>>')[1].trim();
+					lineSplit[1] = lineSplit[1].split('>>')[0].trim();
+				}
+				else {
+					// sometimes, spanish translation should be taken as whole fragment
+					// example: cuerpo humano
+					// otherwise, takes last word, like "nino" from "el nino"
+					const shouldTakeWholeFragment = lineSplit[1].includes('<') && lineSplit[1].includes('>');
+
+					spanishPronunciationWord = shouldTakeWholeFragment
+						? (lineSplit[1].split('<')[1].split('>')[0])
+						: (lineSplit[1].split(' ').reduce((a, b, c, arr) => arr[arr.length - 1]));
+				}
+
+				return {
+					english: lineSplit[0],
+					spanish: lineSplit[1].replace(/[<>]/g, ''),
+					spanishPronunciationWord: spanishPronunciationWord.trim()
+				};
+			});
+			return words;
+
+			// only return lines that don't start with comment ("//"), or aren't empty
+			function filterCsvLine (line) {
+				return !line.trim().startsWith('//') && line.trim();
 			}
-			else {
-				// sometimes, spanish translation should be taken as whole fragment
-				// example: cuerpo humano
-				// otherwise, takes last word, like "nino" from "el nino"
-				const shouldTakeWholeFragment = lineSplit[1].includes('<') && lineSplit[1].includes('>');
+		}
 
-				spanishPronunciationWord = shouldTakeWholeFragment
-					? (lineSplit[1].split('<')[1].split('>')[0])
-					: (lineSplit[1].split(' ').reduce((a, b, c, arr) => arr[arr.length - 1]));
-			}
+		function parseJson(rawFileString) {
+			const words = JSON.parse(rawFileString);
+			console.log(words);
+			return words;
+		}
 
-			return {
-				english: lineSplit[0],
-				spanish: lineSplit[1].replace(/[<>]/g, ''),
-				spanishPronunciationWord: spanishPronunciationWord.trim()
-			};
-		});
-		return words;
 	}
 	catch (err) {
 		throw new Error(`error fetching words: ${err}`);
 	}
 
-	// only return lines that don't start with comment ("//"), or aren't empty
-	function filterCsvLine (line) {
-		return !line.trim().startsWith('//') && line.trim();
-	}
 }
 
 

@@ -1,0 +1,316 @@
+[{
+	"english": "some, someone (pron)",
+	"spanish": "alguno, alguien",
+	"spanishPronunciationWord": "alguno",
+	"num": 50
+}, {
+	"english": "same",
+	"spanish": "mismo",
+	"spanishPronunciationWord": "mismo",
+	"num": 51
+},{
+	"english": "to pass, spend (time), happen",
+	"spanish": "pasar",
+	"spanishPronunciationWord": "pasar",
+	"num": 67
+}, {
+	"english": "so, then",
+	"spanish": "entonces",
+	"spanishPronunciationWord": "entonces",
+	"num": 76
+},  {
+	"english": "part, portion",
+	"spanish": "la parte",
+	"spanishPronunciationWord": "parte",
+	"num": 86
+}, {
+	"english": "that (over there)",
+	"spanish": "aquel",
+	"spanishPronunciationWord": "aquel",
+	"num": 107
+}, {
+	"english": "but, except, rather",
+	"spanish": "sino",
+	"spanishPronunciationWord": "sino",
+	"num": 109
+}, {
+	"english": "to return, to come back",
+	"spanish": "volver",
+	"spanishPronunciationWord": "volver",
+	"num": 112
+}, {
+	"english": "form, shape, way",
+	"spanish": "la forma",
+	"spanishPronunciationWord": "forma",
+	"num": 113
+},{
+	"english": "although, even though",
+	"spanish": "aunque",
+	"spanishPronunciationWord": "aunque",
+	"num": 117
+},  {
+	"english": "such (a)",
+	"spanish": "tal",
+	"spanishPronunciationWord": "tal",
+	"num": 120
+},{
+	"english": "toward, towards",
+	"spanish": "hacia",
+	"spanishPronunciationWord": "hacia",
+	"num": 125
+},{
+	"english": "case, fact",
+	"spanish": "caso",
+	"spanishPronunciationWord": "caso",
+	"num": 130
+}, {
+	"english": "to feel, regret",
+	"spanish": "sentir",
+	"spanishPronunciationWord": "sentir",
+	"num": 131
+}, {
+	"english": "to try, treat, deal with",
+	"spanish": "tratar",
+	"spanishPronunciationWord": "tratar",
+	"num": 134
+}, {
+	"english": "no, none, nobody (pron)",
+	"spanish": "ninguno",
+	"spanishPronunciationWord": "ninguno",
+	"num": 144
+}, {
+	"english": "point, dot, period (punctuation)",
+	"spanish": "punto",
+	"spanishPronunciationWord": "punto",
+	"num": 147
+},  {
+	"english": "any, anyone (pron)",
+	"spanish": "cualquier",
+	"spanishPronunciationWord": "cualquier",
+	"num": 149
+},  {
+	"english": "way, manner",
+	"spanish": "manera",
+	"spanishPronunciationWord": "manera",
+	"num": 152
+},  {
+	"english": "while, whereas, as long as",
+	"spanish": "mientras",
+	"spanishPronunciationWord": "mientras",
+	"num": 154
+}, {
+	"english": "to tell, count",
+	"spanish": "contar",
+	"spanishPronunciationWord": "contar",
+	"num": 155
+}, {
+	"english": "end",
+	"spanish": "el fin",
+	"spanishPronunciationWord": "fin",
+	"num": 156
+}, {
+	"english": "type, kind",
+	"spanish": "tipo",
+	"spanishPronunciationWord": "tipo",
+	"num": 157
+},  {
+	"english": "also, as well, besides",
+	"spanish": "además",
+	"spanishPronunciationWord": "además",
+	"num": 159
+}, {
+	"english": "lonely, alone",
+	"spanish": "solo",
+	"spanishPronunciationWord": "solo",
+	"num": 160
+}, {
+	"english": "to begin, start",
+	"spanish": "empezar",
+	"spanishPronunciationWord": "empezar",
+	"num": 161
+},  {
+	"english": "to wait, hope (for), expect",
+	"spanish": "esperar",
+	"spanishPronunciationWord": "esperar",
+	"num": 163
+}, {
+	"english": "today, nowadays",
+	"spanish": "hoy",
+	"spanishPronunciationWord": "hoy",
+	"num": 164
+}, {
+	"english": "bill, account",
+	"spanish": "cuenta",
+	"spanishPronunciationWord": "cuenta",
+	"num": 170
+}, {
+	"english": "means, middle; por medio: through",
+	"spanish": "medio",
+	"spanishPronunciationWord": "medio",
+	"num": 171
+}, {
+	"english": "against",
+	"spanish": "contra",
+	"spanishPronunciationWord": "contra",
+	"num": 172
+}, {
+	"english": "however, nevertheless",
+	"spanish": "sin embargo",
+	"spanishPronunciationWord": "sin embargo",
+	"num": 180
+}, {
+	"english": "way, manner",
+	"spanish": "modo",
+	"spanishPronunciationWord": "modo",
+	"num": 198
+}, {
+	"english": "to ask for, request",
+	"spanish": "pedir",
+	"spanishPronunciationWord": "pedir",
+	"num": 204
+},  {
+	"english": "still, yet",
+	"spanish": "todavía",
+	"spanishPronunciationWord": "todavía",
+	"num": 211
+}, {
+	"english": "reason",
+	"spanish": "razón",
+	"spanishPronunciationWord": "razón",
+	"num": 212
+}, {
+	"english": "to remember, remind",
+	"spanish": "recordar",
+	"spanishPronunciationWord": "recordar",
+	"num": 215
+},{
+	"english": "to get, acquire, obtain",
+	"spanish": "conseguir",
+	"spanishPronunciationWord": "conseguir",
+	"num": 222
+}, {
+	"english": "to introduce, present",
+	"spanish": "presentar",
+	"spanishPronunciationWord": "presentar",
+	"num": 249
+}, {
+	"english": "to create",
+	"spanish": "crear",
+	"spanishPronunciationWord": "crear",
+	"num": 251
+}, {
+	"english": "distinct, different",
+	"spanish": "distinto",
+	"spanishPronunciationWord": "distinto",
+	"num": 254
+}, {
+	"english": "strength, force, power",
+	"spanish": "la fuerza",
+	"spanishPronunciationWord": "fuerza",
+	"num": 255
+},  {
+	"english": "according to",
+	"spanish": "según",
+	"spanishPronunciationWord": "según",
+	"num": 257
+}, {
+	"english": "whose",
+	"spanish": "cuyo",
+	"spanishPronunciationWord": "cuyo",
+	"num": 264
+}, {
+	"english": "sense, feeling",
+	"spanish": "sentido",
+	"spanishPronunciationWord": "sentido",
+	"num": 265
+}, {
+	"english": "finish",
+	"spanish": "acabar",
+	"spanishPronunciationWord": "acabar",
+	"num": 266
+}, {
+	"english": "step, pace",
+	"spanish": "paso",
+	"spanishPronunciationWord": "paso",
+	"num": 267
+}, {
+	"english": "situation",
+	"spanish": "situación",
+	"spanishPronunciationWord": "situación",
+	"num": 268
+},{
+	"english": "rather, fairly, quite a bit (adv)",
+	"spanish": "bastante",
+	"spanishPronunciationWord": "bastante",
+	"num": 270
+},  {
+	"english": "century, age",
+	"spanish": "siglo",
+	"spanishPronunciationWord": "siglo",
+	"num": 273
+}, {
+	"english": "god, divinity",
+	"spanish": "dios",
+	"spanishPronunciationWord": "dios",
+	"num": 274
+}, {
+	"english": "earth, land, ground",
+	"spanish": "tierra",
+	"spanishPronunciationWord": "tierra",
+	"num": 276
+},  {
+	"english": "neither, nor, either",
+	"spanish": "tampoco",
+	"spanishPronunciationWord": "tampoco",
+	"num": 279
+}, {
+	"english": "social",
+	"spanish": "social",
+	"spanishPronunciationWord": "social",
+	"num": 280
+},  {
+	"english": "still, yet",
+	"spanish": "aún",
+	"spanishPronunciationWord": "aún",
+	"num": 282
+}, {
+	"english": "theme, subject, topic",
+	"spanish": "el tema",
+	"spanishPronunciationWord": "tema",
+	"num": 283
+}, {
+	"english": "political",
+	"spanish": "político",
+	"spanishPronunciationWord": "político",
+	"num": 284
+},  {
+	"english": "kind, class, order",
+	"spanish": "la clase",
+	"spanishPronunciationWord": "clase",
+	"num": 288
+}, {
+	"english": "to bring, carry",
+	"spanish": "traer",
+	"spanishPronunciationWord": "traer",
+	"num": 289
+}, {
+	"english": "to split, break",
+	"spanish": "partir",
+	"spanishPronunciationWord": "partir",
+	"num": 290
+}, {
+	"english": "including, even (adv)",
+	"spanish": "incluso",
+	"spanishPronunciationWord": "incluso",
+	"num": 294
+},  {
+	"english": "perhaps, maybe",
+	"spanish": "quizás",
+	"spanishPronunciationWord": "quizás",
+	"num": 297
+}, {
+	"english": "to fulfill, carry out",
+	"spanish": "realizar",
+	"spanishPronunciationWord": "realizar",
+	"num": 299
+}]
