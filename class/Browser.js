@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-const numSentencePairs = 3;
+const numSentencePairs = 7;
 const { wait } = require('../util');
 
 
