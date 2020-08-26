@@ -38,10 +38,28 @@ class Browser {
 		console.log(url);
 
 
-		const sentences = await this.page.evaluate(numSentencePairs => {
-			console.log(document);
+		/*
+			DOM structure of Example page would look something like:
 
-			const sents = Array.from(document.querySelectorAll('.translate .megaexamples-pair .megaexamples-pair-part'))
+			 _________________________________________
+			|                    |                    |
+			|  spanish sentence  |   english sentence |
+			|____________________|____________________|
+			|                    |                    |
+			|  spanish sentence  |   english sentence |
+			|____________________|____________________|
+			|                    |                    |
+			|  spanish sentence  |   english sentence |
+			|____________________|____________________|
+
+			This is an HTML table.  I'm querying for the individual `td`s, so if the table structure changed, this will totally break.
+			There aren't many good ways to scrape these unfortunately
+			Sample URL:  https://www.spanishdict.com/examples/pollo?lang=es
+		*/
+		const sentences = await this.page.evaluate(numSentencePairs => {
+
+
+			const sents = Array.from(document.querySelectorAll('#main-container-flex table tbody tr td'))
 				.slice(0, numSentencePairs * 2)
 				.map(node => node.innerText)
 				.reduce((accum, sentence, index) => {
